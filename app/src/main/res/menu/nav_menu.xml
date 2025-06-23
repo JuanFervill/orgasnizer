@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_diario"
+            android:icon="@drawable/calendario_day"
+            android:title="Diaria"/>
+        <item
+            android:id="@+id/nav_semanal"
+            android:icon="@drawable/calendario_week"
+            android:title="Semanal"/>
+        <item
+            android:id="@+id/nav_mensual"
+            android:icon="@drawable/calendario_mes"
+            android:title="Mensual"/>
+        <item
+            android:id="@+id/nav_lista"
+            android:icon="@drawable/image_informe"
+            android:title="Lista de informes"/>
+        <!--
+        <item
+            android:id="@+id/nav_notis"
+            android:icon="@drawable/image_informe"
+            android:title="Informes"/>
+            -->
+    </group>
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/cerrarsesion"
+                android:icon="@drawable/logout"
+                android:title="Cerrar sesion"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@drawable/headerbkgdifuso">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="417dp"
+        android:layout_height="68dp"
+        android:fontFamily="@font/good_times"
+        android:gravity="center"
+        android:text="Informes generados"
+        android:textColor="@color/Azul_gradiente"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/cbtipoinforme"
+        android:layout_width="386dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="303dp"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/Azul_gradiente"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="131dp"
+        android:contentDescription="scrollview">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sindatos"
+                android:layout_width="417dp"
+                android:layout_height="68dp"
+                android:fontFamily="@font/logostile"
+                android:gravity="center"
+                android:text="No hay informes generados"
+                android:textColor="@color/white"
+                android:background="@color/Azul_gradiente"
+                android:visibility="invisible"
+                android:textSize="24dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

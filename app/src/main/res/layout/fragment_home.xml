@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@drawable/headerbkgdifuso">
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- TextViews adicionales -->
+
+    <TextView
+        android:id="@+id/tituloapp"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="605dp"
+        android:background="@color/white"
+        android:fontFamily="@font/neuropolitical"
+        android:gravity="center"
+        android:text="OrGasnizer Station"
+        android:textColor="@color/Azul_gradiente"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/nombrestation"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-133dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/good_times"
+        android:gravity="center"
+        android:hint="Introduzca el nombre de la gasolinera"
+        android:textColor="@color/Azul_gradiente"
+        android:textColorHint="@color/Azul_gradiente"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/nombreuser"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginBottom="538dp"
+        android:background="@color/white"
+        android:fontFamily="@font/good_times"
+        android:gravity="center"
+        android:text="nombre de usuario"
+        android:textColor="@color/Azul_gradiente"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck,TextSizeCheck" />
+
+    <Spinner
+        android:id="@+id/comboobj"
+        android:layout_width="386dp"
+        android:layout_height="66dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="233dp"
+        android:layout_marginBottom="272dp"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/Azul_gradiente"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/comboinfo"
+        android:layout_width="386dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/nombrestation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginTop="294dp"
+        android:gravity="center"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/Azul_gradiente"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/Azul_gradiente"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btngeninf"
+        android:layout_width="204dp"
+        android:layout_height="112dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="367dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="86dp"
+        android:background="@color/white"
+        android:fontFamily="@font/good_times"
+        android:gravity="center"
+        android:text="Generar informe"
+        android:textColor="@color/Azul_gradiente"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+
+</RelativeLayout>
+

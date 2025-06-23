@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nav_home" type="id" />
+    <item name="nav_diario" type="id" />
+    <item name="nav_semanal" type="id" />
+    <item name="nav_mensual" type="id" />
+    <item name="nav_notis" type="id" />
+</resources>

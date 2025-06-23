@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/fechavi"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Azul_gradiente"
+        android:fontFamily="@font/logostile"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="21dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/borrainforme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="353dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/borrar_logo" />
+
+    <LinearLayout
+        android:id="@+id/rayaitem"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/Azul_cielo"
+        android:layout_below="@id/fechavi"
+        android:orientation="vertical" />
+
+
+</RelativeLayout>

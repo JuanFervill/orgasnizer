@@ -1,0 +1,1548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="scrollview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:id="@+id/etfecham"
+                android:hint="Fecha de comprobación"
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:textColorHint="@color/Azul_gradiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:maxLines="1" />
+
+            <!-- Primera sección -->
+
+            <!-- Titulo -->
+            <TextView
+                android:fontFamily="@font/good_times"
+                android:background="@color/Azul_gradiente"
+                android:textColor="@color/white"
+                android:id="@+id/titulo_surti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Surtidores"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@id/etfecham"/>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_surti1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aparatos verificados por Organismo de Control, con el adhesivo de verificación en lugar visible del AS."
+                android:textSize="25sp"
+                android:layout_below="@id/titulo_surti" />
+
+        <!-- Botones -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiogroup_surti1"
+            android:layout_below="@id/textv_surti1">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/rgsurti1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:orientation="horizontal" />
+
+                <RadioButton
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:id="@+id/bien_surti1"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bien" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:orientation="horizontal" />
+
+                <RadioButton
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:id="@+id/mal_surti1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:orientation="horizontal" />
+
+                <RadioButton
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:id="@+id/NA_surti1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NA" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:orientation="horizontal" />
+
+            </RadioGroup>
+
+            <!-- Texto que se envia -->
+            <EditText
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:textColorHint="@color/Azul_gradiente"
+                android:id="@+id/desasurti1"
+                android:layout_width="322dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:inputType="text"
+                android:hint="Acciones a desarrollar"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_surti2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instrucciones de uso de los aparatos con las medidas de seguridad y cartel de instrucciones de emergencia para clientes expuestas en un lugar visible y buenas condiciones."
+                android:textSize="25sp"
+                android:layout_below="@id/radiogroup_surti1" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_surti2"
+                android:layout_below="@id/textv_surti2">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgsurti2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_surti2"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_surti2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_surti2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desasurti2"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_surti3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Afericiones de cada una de las mangueras, con el correspondiente registro y envío al responsable comercial."
+                android:textSize="25sp"
+                android:layout_below="@id/radiogroup_surti2" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_surti3"
+                android:layout_below="@id/textv_surti3">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgsurti3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_surti3"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_surti3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_surti3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desasurti3"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rayaA"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/radiogroup_surti3"/>
+
+            <!-- Segunda seccion -->
+
+            <!-- Titulo -->
+            <TextView
+                android:fontFamily="@font/good_times"
+                android:background="@color/Azul_gradiente"
+                android:textColor="@color/white"
+                android:id="@+id/titulo_arq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Arquetas eléctricas"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@id/rayaA"/>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_arq1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Canalizaciones eléctricas antes del cuadro eléctrico de la ES con sellado visible."
+                android:textSize="25sp"
+                android:layout_below="@id/titulo_arq" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_arq1"
+                android:layout_below="@id/textv_arq1">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgarq1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_arq1"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_arq1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_arq1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desaarq1"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_arq2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comprobación del relleno de arena después de cada actuación (se comprueba el relleno de arena después de una obra o mantenimiento que lo hayan podido quitar)."
+                android:textSize="25sp"
+                android:layout_below="@id/radiogroup_arq1" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_arq2"
+                android:layout_below="@id/textv_arq2">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgarq2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_arq2"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_arq2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_arq2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desaarq2"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rayaB"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/radiogroup_arq2"/>
+
+            <!-- Tercera sección -->
+
+            <!-- Titulo -->
+            <TextView
+                android:fontFamily="@font/good_times"
+                android:background="@color/Azul_gradiente"
+                android:textColor="@color/white"
+                android:id="@+id/titulo_compre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Compresor de aire"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@id/rayaB"/>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_compre1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Revisión del nivel de aceite y regulación del presos."
+                android:textSize="25sp"
+                android:layout_below="@id/titulo_compre" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_compre1"
+                android:layout_below="@id/textv_compre1">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgcompre1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_compre1"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_compre1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_compre1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desacompre1"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_compre2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Protegido y libre de obstáculos (accesible)."
+                android:textSize="25sp"
+                android:layout_below="@id/radiogroup_compre1" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_compre2"
+                android:layout_below="@id/textv_compre2">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgcompre2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_compre2"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_compre2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_compre2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desacompre2"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rayaC"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/radiogroup_compre2"/>
+
+            <!-- Cuarta sección -->
+
+            <!-- Titulo -->
+            <TextView
+                android:fontFamily="@font/good_times"
+                android:background="@color/Azul_gradiente"
+                android:textColor="@color/white"
+                android:id="@+id/titulo_extint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Extintores"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@id/rayaC"/>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_extint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Extintores con fechas de inspección no caducadas, presión correcta, y sin adhesivos no autorizados."
+                android:textSize="25sp"
+                android:layout_below="@id/titulo_extint" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_extint"
+                android:layout_below="@id/textv_extint">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgextint">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_extint"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_extint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_extint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desaextint"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rayaD"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/radiogroup_extint"/>
+
+            <!-- Quinta sección -->
+
+            <!-- Titulo -->
+            <TextView
+                android:fontFamily="@font/good_times"
+                android:background="@color/Azul_gradiente"
+                android:textColor="@color/white"
+                android:id="@+id/titulo_reda"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Red de aguas HCs y separador"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@id/rayaD"/>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_reda1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Separador de hidrocarburos (comprobar que no están saturado o rebosa)."
+                android:textSize="25sp"
+                android:layout_below="@id/titulo_reda" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_reda1"
+                android:layout_below="@id/textv_reda1">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgreda1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_reda1"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_reda1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_reda1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desareda1"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_reda2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Observar visualmente que el líquido en la arqueta de toma de muestras no presenta hidrocarburo en fase libre."
+                android:textSize="25sp"
+                android:layout_below="@id/radiogroup_reda1" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_reda2"
+                android:layout_below="@id/textv_reda2">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgreda2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_reda2"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_reda2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_reda2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desareda2"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_reda3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comprobación visual del punto de vertido final (aparentemente el vertido es correcto, no apreciándose hidrocarburo en fase libre), especialmente en entornos sensibles."
+                android:textSize="25sp"
+                android:layout_below="@id/radiogroup_reda2" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_reda3"
+                android:layout_below="@id/textv_reda3">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgreda3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_reda3"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_reda3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_reda3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desareda3"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <!-- Quinta sección -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rayaE"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/radiogroup_reda3"/>
+
+            <!-- Titulo -->
+            <TextView
+                android:fontFamily="@font/good_times"
+                android:background="@color/Azul_gradiente"
+                android:textColor="@color/white"
+                android:id="@+id/titulo_resi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Residuos"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@id/rayaE"/>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_resi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Armario de residuos peligrosos en buen estado y bidones etiquetados."
+                android:textSize="25sp"
+                android:layout_below="@id/titulo_resi" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_resi"
+                android:layout_below="@id/textv_resi">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgresi">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_resi"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_resi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_resi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desaresi"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <!-- Sexta sección -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rayaF"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/radiogroup_resi"/>
+
+            <!-- Titulo -->
+            <TextView
+                android:fontFamily="@font/good_times"
+                android:background="@color/Azul_gradiente"
+                android:textColor="@color/white"
+                android:id="@+id/titulo_tanq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tanques doble pared"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@id/rayaF"/>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_tanq1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Revisión de vacuómetro en arqueta de boca de hombre: comprobación de vacío (solo si existe y es visible)."
+                android:textSize="25sp"
+                android:layout_below="@id/titulo_tanq" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_tanq1"
+                android:layout_below="@id/textv_tanq1">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgtanq1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_tanq1"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_tanq1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_tanq1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desatanq1"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <!-- Descripcion -->
+            <TextView
+                android:fontFamily="@font/logostile"
+                android:textStyle="bold"
+                android:textColor="@color/Azul_gradiente"
+                android:id="@+id/textv_tanq2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comprobación de funcionamiento (en la consola) del sensor de liquido de la doble pared o sistema SGB de Rafibra (si existe)."
+                android:textSize="25sp"
+                android:layout_below="@id/radiogroup_tanq1" />
+
+            <!-- Botones -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup_tanq2"
+                android:layout_below="@id/textv_tanq2">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/rgtanq2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/bien_tanq2"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bien" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/mal_tanq2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                    <RadioButton
+                        android:fontFamily="@font/logostile"
+                        android:textStyle="bold"
+                        android:textColor="@color/Azul_gradiente"
+                        android:id="@+id/NA_tanq2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NA" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:orientation="horizontal" />
+
+                </RadioGroup>
+
+                <!-- Texto que se envia -->
+                <EditText
+                    android:fontFamily="@font/logostile"
+                    android:textStyle="bold"
+                    android:textColor="@color/Azul_gradiente"
+                    android:textColorHint="@color/Azul_gradiente"
+                    android:id="@+id/desatanq2"
+                    android:layout_width="322dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:inputType="text"
+                    android:hint="Acciones a desarrollar"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rayaLast"
+                android:layout_height="15dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/radiogroup_tanq2"/>
+
+            <!-- Botones para enviar -->
+            <LinearLayout
+                android:id="@+id/grupoenviarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rayaLast"
+                android:orientation="horizontal">
+
+                <Button
+                    android:fontFamily="@font/good_times"
+                    android:background="@color/Azul_gradiente"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/enviarmes"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Guardar"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <Button
+                    android:fontFamily="@font/good_times"
+                    android:background="@color/Azul_gradiente"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/autodiam"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Automatico"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="30dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rayaLast2"
+                android:layout_height="15dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/grupoenviarm"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
